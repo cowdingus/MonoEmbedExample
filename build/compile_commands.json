@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/xnic/Documents/Programming_Playground/MonoEmbed/build",
+  "command": "/usr/bin/c++  -I/usr/lib/pkgconfig/../../include/mono-2.0 -I/home/xnic/Documents/Programming_Playground/MonoEmbed/include -D_REENTRANT -Wall -Wextra -pedantic -std=gnu++17 -o CMakeFiles/MonoEmbed.dir/src/main.cpp.o -c /home/xnic/Documents/Programming_Playground/MonoEmbed/src/main.cpp",
+  "file": "/home/xnic/Documents/Programming_Playground/MonoEmbed/src/main.cpp"
+}
+]

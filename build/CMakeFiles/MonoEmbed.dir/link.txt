@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MonoEmbed.dir/src/main.cpp.o -o MonoEmbed  -lmono-2.0 -lm -lrt -ldl -lpthread -lfmt 

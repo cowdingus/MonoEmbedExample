@@ -1,0 +1,3 @@
+/home/xnic/Documents/Programming_Playground/MonoEmbed/build/CMakeFiles/rebuild_cache.dir
+/home/xnic/Documents/Programming_Playground/MonoEmbed/build/CMakeFiles/edit_cache.dir
+/home/xnic/Documents/Programming_Playground/MonoEmbed/build/CMakeFiles/MonoEmbed.dir
