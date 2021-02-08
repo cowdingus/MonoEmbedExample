@@ -21,12 +21,13 @@ set_target_properties(
 	"${PROJECT_NAME}"
 	PROPERTIES
 	CXX_STANDARD 17
+	ENABLE_EXPORTS ON
 	)
 
 target_compile_options(
 	"${PROJECT_NAME}" PRIVATE
 	${MONO2_CFLAGS_OTHER}
-	-Wall -Wextra -pedantic -rdynamic
+	-Wall -Wextra -pedantic
 	)
 
 target_include_directories(
