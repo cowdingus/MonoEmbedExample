@@ -26,7 +26,7 @@ set_target_properties(
 target_compile_options(
 	"${PROJECT_NAME}" PRIVATE
 	${MONO2_CFLAGS_OTHER}
-	-Wall -Wextra -pedantic
+	-Wall -Wextra -pedantic -rdynamic
 	)
 
 target_include_directories(

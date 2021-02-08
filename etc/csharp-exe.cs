@@ -1,16 +1,26 @@
 using System;
 using System.Runtime.InteropServices;
 
-[DllImport ("__Internal", EntryPoint="exposedCFunction")]
-static extern void ExposedCFunction();
-
 namespace CSharpExe
 {
+	/*
+	class ExposedCInterface
+	{
+		[DllImport ("__Internal", EntryPoint="ExposedCFunction")]
+		static public extern void ExposedCFunction();
+	}
+	*/
+
 	class CSharpExe
 	{
+[DllImport ("__Internal", EntryPoint="ExposedCFunction")]
+static extern void ExposedCFunction();
 		static void Main(string[] args)
 		{
 			Console.WriteLine("-- CSharpExe");
+			Console.WriteLine("-- Calling ExposedCInterface.ExposedCFunction");
+			// ExposedCInterface.ExposedCFunction();
+			ExposedCFunction();
 		}
 	}
 }
