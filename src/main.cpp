@@ -8,6 +8,14 @@ void exposedCFunction()
 	std::cout << "== exposedCFunction is called" << std::endl;
 }
 
+extern "C"
+{
+	void ExposedCFunction()
+	{
+		std::cout << "== ExposedCFunction is called" << std::endl;
+	}
+}
+
 int main(int argc, char *argv[])
 {
 	MonoDomain* domain;
@@ -32,7 +40,7 @@ int main(int argc, char *argv[])
 	else
 		std::cout << "csharp-exe.exe loaded" << std::endl;
 
-	mono_add_internal_call("CSharpExe.ExposedCInterface::ExposedCFunction", reinterpret_cast<void*>(exposedCFunction));
+	mono_add_internal_call("CSharpExe.ExposedCInterface::ExposedCFunction1", reinterpret_cast<void*>(exposedCFunction));
 
 	auto retval = mono_jit_exec(domain, assembly, argc - 1, argv + 1);
 
